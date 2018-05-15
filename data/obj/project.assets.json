@@ -11,7 +11,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "NETStandard.Library/2.0.0": {
+      "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
@@ -42,14 +42,13 @@
         "runtime.json"
       ]
     },
-    "NETStandard.Library/2.0.0": {
-      "sha512": "7jnbRU+L08FXKMxqUflxEXtVymWvNOrS8yHgu9s6EM8Anr6T/wIX4nZ08j/u3Asz+tCufp3YVwFSEvFTPYmBPA==",
+    "NETStandard.Library/2.0.3": {
+      "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
-      "path": "netstandard.library/2.0.0",
+      "path": "netstandard.library/2.0.3",
       "files": [
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "build/NETStandard.Library.targets",
         "build/netstandard2.0/NETStandard.Library.targets",
         "build/netstandard2.0/ref/Microsoft.Win32.Primitives.dll",
         "build/netstandard2.0/ref/System.AppContext.dll",
@@ -166,42 +165,40 @@
         "build/netstandard2.0/ref/netstandard.dll",
         "build/netstandard2.0/ref/netstandard.xml",
         "lib/netstandard1.0/_._",
-        "netstandard.library.2.0.0.nupkg.sha512",
+        "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.0"
+      "NETStandard.Library >= 2.0.3"
     ]
   },
   "packageFolders": {
-    "/Users/julialerman/.nuget/packages/": {},
+    "/Users/julielerman/.nuget/packages/": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/julialerman/Dropbox/ConferenceStuff/DDDEU/Demos/v1/data/data.csproj",
+      "projectUniqueName": "/Users/julielerman/Dropbox/ConferenceStuff/2018 Spring ScotlandBelgiumSwitz/Demos/EF_DDD/data/data.csproj",
       "projectName": "data",
-      "projectPath": "/Users/julialerman/Dropbox/ConferenceStuff/DDDEU/Demos/v1/data/data.csproj",
-      "packagesPath": "/Users/julialerman/.nuget/packages/",
-      "outputPath": "/Users/julialerman/Dropbox/ConferenceStuff/DDDEU/Demos/v1/data/obj/",
+      "projectPath": "/Users/julielerman/Dropbox/ConferenceStuff/2018 Spring ScotlandBelgiumSwitz/Demos/EF_DDD/data/data.csproj",
+      "packagesPath": "/Users/julielerman/.nuget/packages/",
+      "outputPath": "/Users/julielerman/Dropbox/ConferenceStuff/2018 Spring ScotlandBelgiumSwitz/Demos/EF_DDD/data/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/julialerman/.nuget/NuGet/NuGet.Config"
+        "/Users/julielerman/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://dotnet.myget.org/F/aspnet-2-0-2-october2017-patch-public/api/v3/index.json": {},
-        "https://dotnet.myget.org/F/dotnet-core/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
@@ -220,7 +217,7 @@
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.3, )",
             "autoReferenced": true
           }
         },

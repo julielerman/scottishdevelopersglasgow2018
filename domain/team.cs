@@ -46,7 +46,6 @@ namespace Domain {
 
     public Manager Manager { get; private set; }
     public UniformColors HomeColors { get; private set; }
-    public UniformColors AwayColors { get; private set; }
     public void ChangeManagement (Manager newManager) {
       {
         if (Manager != null) {
@@ -57,31 +56,9 @@ namespace Domain {
         Manager = newManager;
       }
     }
-    public bool SpecifyHomeUniformColors (Color shirt1, Color shirt2, Color shirt3, Color shorts1, Color shorts2, Color socks, bool force) {
-      var colorSet = new UniformColors (shirt1, shirt2, shirt3, shorts1, shorts2, socks);
-      if (AwayColors is null) {
-        HomeColors = colorSet;
-        return true;
-      }
-      if (!colorSet.Equals (AwayColors) || (colorSet.Equals (AwayColors) && force)) {
-        HomeColors = colorSet;
-        return true;
-      } else {
-        return false;
-      }
-    }
-    public bool SpecifyAwayUniformColors (Color shirt1, Color shirt2, Color shirt3, Color shorts1, Color shorts2, Color socks, bool force) {
-      var colorSet = new UniformColors (shirt1, shirt2, shirt3, shorts1, shorts2, socks);
-      if (HomeColors is null) {
-        AwayColors = colorSet;
-        return true;
-      }
-      if (!colorSet.Equals (HomeColors) || (colorSet.Equals (HomeColors) && force)) {
-        AwayColors = colorSet;
-        return true;
-      } else {
-        return false;
-      }
-    }
+    public void SpecifyHomeUniformColors (Color shirt1, Color shirt2, Color shirt3, Color shorts1, Color shorts2, Color socks) {
+      HomeColors = new UniformColors (shirt1, shirt2, shirt3, shorts1, shorts2, socks);
+       }
+  
   }
 }
